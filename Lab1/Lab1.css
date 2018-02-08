@@ -1,0 +1,11 @@
+#page-header{
+	text-align: center;
+	
+}
+
+li{
+	border: 1px solid grey;
+	background-color: aliceblue;
+	min-height: 70px;
+	list-style-type: none;
+}

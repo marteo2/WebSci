@@ -1,0 +1,33 @@
+div#app-title{
+	width: 100%;
+	text-align: center;
+	color: dodgerblue;
+	padding-top: 10px;
+}
+#current-loc{
+	width: 90%;
+	text-align: center;
+	border: 2px solid dodgerblue;
+	margin: 5%;
+	border-radius: 10px;
+}
+.row{
+	padding: 5px;
+}
+#currentweather{
+	text-align: center;
+	border: 2px solid dodgerblue;
+	border-radius: 10px;
+	font-size: 30px;
+}
+#currentweather p{
+	padding: 15px;
+}
+#weatherforecast_data div{
+	border: 2px solid dodgerblue;
+	border-radius: 10px;
+	padding-bottom: 10px;
+}
+#weatherforecast_data div h2, #weatherforecast_data div h3{
+	padding: 10px;
+} 

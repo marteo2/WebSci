@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Liv Martens Lab 4</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		
+		<link href = "lab4.css" type="text/css" rel = "stylesheet">
+		
+		<!Google Font URLs added at various times>
+		
+	</head>
+	
+	<body >
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12" id="page-header">
+					<h1>Lab 4 - WebSci</h1>
+					<h3>Responsive Weather App</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div ng-app="myApp" ng-controller="myCtrl" class="col-xs-12" id="current-loc">
+					<h3>Your Location: {{long}}, {{lat}}</h3>
+					<h3 id="location-info"></h3>
+				</div>
+			</div>
+			<div class="row">
+				<div id="currentweather" class="col-xs-12 col-sm-6">
+					<p id="currentweather_data"></p>
+				</div>
+				<div id="weatherforecast_data" class="col-sm-6 col-xs-12">
+					
+				</div>
+			</div>
+		</div>
+	
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+	<script type="text/javascript" src="lab4.js"></script>
+</html>

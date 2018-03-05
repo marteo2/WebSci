@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Liv Martens Lab 5</title>
+		<link href = "lab5.css" type="text/css" rel = "stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		<!Google Font URLs added at various times>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+		
+	</head>
+	<body ng-app="twitterApp" ng-controller="TwitterCTRL">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12" id="top_banner">
+					<h1>Twitter Feed App</h1>
+					<h3>Liv Martens - Lab 5</h3>
+				</div>
+			</div>
+			<div class="row input-content"> <! input form for search capability >
+				<div class="col-xs-12" id="twitInput">
+					<form ng-submit="twitterSearchFunction()">
+						<h3>Search: <input type="text" ng-model="searchQuery" placeholder="Search..."><br></h3>
+						<h3>Number of Tweets: <input type="number" ng-model="searchNumber" min="1" max="10"></h3>
+						<button type="submit">SUBMIT</button>
+					</form>
+				</div> 
+			</div>
+			<div class="output-content"> <!output area and reset button>
+				<div class="tweet" ng-repeat = "i in recordedTweets">
+					<div class="tweet-wrapper">
+						<div class="user-info">
+							<img class="img-round" src="{{i.user.profile_image_url_https}}" alt="Placeholder Image">
+							<p class="user-name"> {{i.user.screen_name}} </p>
+						</div>
+						<div class="tweet-text">
+							<p> {{i.text}} </p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12" id="refresh">
+					<input type="button" value="REFRESH PAGE" onClick="window.location.reload()"> <! tips on reload from stack overflow>
+				</div>
+			</div>
+		</div>		
+	</body>	
+	<! script includes, jquery, bootstrap, angular, and code.js >
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-resource.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+	<script type="text/javascript" src="code.js"></script>
+</html>

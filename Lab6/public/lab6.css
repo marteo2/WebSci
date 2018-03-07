@@ -1,0 +1,91 @@
+body, html{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif !important;
+}
+
+#top_banner{
+	width: 100%;
+	text-align: center;
+	background-color: black;
+	color: white;
+	border: 1px solid grey;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	
+}
+#top_banner h1, #top_banner h3{
+	font-family: 'Roboto', sans-serif !important;
+	font-weight: 300 !important;
+
+}
+
+div.input-content{
+	text-align: center;
+}
+div#twitInput form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+form h3, form button{
+	margin: 10px;
+}
+form button{
+	background-color: teal;
+	color: white;
+	border: 0px;
+	padding: 10px;
+	border-radius: 4px;
+	transition: all 1s;
+}
+form button:hover{
+	border-radius: 30px;
+	background-color: black;
+}
+
+div.output-content{
+	text-align: center;
+	font-family: 'Roboto', sans-serif !important;
+}
+
+.tweet{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.tweet-wrapper{
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 5px;
+	border-bottom: 1px solid grey;
+	max-width: 1000px;
+}
+.user-info{
+	display: block;
+}
+.tweet-text{
+	max-width: 400px;
+	padding-left: 20px;
+}
+
+.img-round{
+	width: 100px;
+	border-radius: 50px;
+}
+
+#refresh input{
+	margin: 50px;
+	color: white;
+	border: 0px;
+	padding: 15px;
+	border-radius: 5px;
+	background-color: darkorange;
+	transition: all 1s;
+}
+#refresh input:hover{
+	background-color: black;
+	border-radius: 30px;
+}
